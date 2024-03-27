@@ -7,3 +7,76 @@ Description: Thème de Nathalie Mota
 Requires at least: WordPress 5.0
 Version: 1.0
 */
+
+/* général  */
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:visited {
+    color: black;
+}
+
+header,
+footer{
+    display: flex;
+    background-color: white;
+    text-align: center;
+    align-items: center;  
+    justify-content: center;
+    margin: auto;
+    z-index: 100;
+}
+
+/* header  */
+/* menu nav  */
+
+.logo-nathalie-mota{
+    width: 90%;
+}
+
+.menu-item{
+    list-style: none;
+    text-decoration: none !important;
+    font-size: 14px;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.header-container{
+    background-color: white;
+    position: relative; 
+    display: flex;
+    width: 100vw; 
+    height: 100%;
+    max-width: 1200px;   
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 30;
+}
+
+#menu-navigation{
+    background-color: white;
+    display: inline-flex;
+    width: 22em;
+    gap: 33px;
+}
+
+/* footer  */
+.menu-footer{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+}
+
+.footer-menu-container{
+    width: 100%;
+}
+
+.stick{
+    height: 1px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
