@@ -13,5 +13,10 @@
     </nav>
 </footer>
 
+<!-- Activation modale contact -->
+<?php
+    get_template_part ('template-parts/modale/modale')
+?>
+
 </body>
 </html>

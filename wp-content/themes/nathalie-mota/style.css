@@ -9,12 +9,15 @@ Version: 1.0
 */
 
 /* général  */
-ul li a {
+.header-contact,
+ul,
+li,
+a {
     text-decoration: none;
     color: black;
 }
 
-ul li a:visited {
+.header-contact ul li a:visited {
     color: black;
 }
 
@@ -36,12 +39,12 @@ footer{
     width: 90%;
 }
 
-.menu-item{
+.menu-item,
+.header-contact{
     list-style: none;
     text-decoration: none !important;
     font-size: 14px;
     font-family: 'Space Mono', monospace;
-
 }
 
 .header-container{
@@ -56,12 +59,50 @@ footer{
     z-index: 30;
 }
 
+.main-menu{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
 #menu-navigation{
     background-color: white;
     display: inline-flex;
-    width: 22em;
+    width: 15em;
     gap: 33px;
 }
+
+/* module  */
+
+#modale-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.wpcf7-form-control,
+.wpcf7-textarea{
+    font-family: 'Space Mono', monospace;
+    border-radius: 5px;
+    border-color: #B8BBC2;
+    box-shadow: none;
+}
+
 
 /* footer  */
 .menu-footer{
