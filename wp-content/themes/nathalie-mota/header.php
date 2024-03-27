@@ -13,6 +13,17 @@
     <a href="<?php echo home_url ('/'); ?>" class="header-logo">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-nathalie-mota.png" alt="Logo">
     </a>
+
+    <nav class="main-menu">
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'primary',
+            'menu_class' => 'menu',
+            'container' => false
+        ));
+        ?>
+    </nav>
+    
 </header>
     
     <?php wp_body_open(); ?>
