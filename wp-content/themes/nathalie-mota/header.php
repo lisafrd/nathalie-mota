@@ -29,7 +29,7 @@
                 ));
                 ?>
             </nav>
-            <a href="#" class="header-contact">CONTACT</a>            
+            <a href="#" class="header-contact">CONTACT</a>
         </div>
     </div>
 </header>
