@@ -74,6 +74,30 @@ footer{
     gap: 33px;
 }
 
+/* en-tête  */
+
+.front-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-front{
+    width: 80%;
+    display: flex;
+}
+
+h1{
+    position: absolute;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 96px;
+    -webkit-text-stroke: 3px white;
+    color: transparent;
+}
+
 /* module  */
 
 .module-container{
@@ -88,13 +112,12 @@ footer{
     align-items: center;
     overflow: hidden;
     width: 34em;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Ajouter une ombre portée */
-    border: 5px solid black;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 #modale-contact {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.7);    
+    background-color: rgba(255, 255, 255);    
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -129,7 +152,7 @@ img.contact-header {
 .wpcf7-textarea{
     font-family: 'Space Mono', monospace;
     border-radius: 5px;
-    border: 1px solid #B8BBC2; /* Définir la bordure avec la couleur spécifiée */
+    border: 1px solid #B8BBC2;
 }
 
 .submit-container{
@@ -159,6 +182,20 @@ img.contact-header {
     cursor: pointer;
 }
 
+.black-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+    z-index: 9998; /* Assurez-vous que le fond est affiché sous la modale */
+    display: none; /* Caché par défaut */
+}
+
+.black-background.active {
+    display: block; /* Afficher lorsqu'actif */
+}
 
 /* footer  */
 .menu-footer{

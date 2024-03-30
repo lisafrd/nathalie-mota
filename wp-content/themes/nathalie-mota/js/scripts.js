@@ -3,15 +3,18 @@ document.addEventListener("DOMContentLoaded", function() {
     var modal = document.getElementById("modale-contact");
     var contactLink = document.querySelector(".header-contact");
     var closeButton = modal.querySelector(".close");
+    var blackBackground = document.querySelector(".black-background");
 
     // Fonction pour afficher la modale
     function openModal() {
         modal.style.display = "block";
+        blackBackground.classList.add("active");
     }
 
     // Fonction pour masquer la modale
     function closeModal() {
         modal.style.display = "none";
+        blackBackground.classList.remove("active");
     }
 
     // Événement au clic sur le lien "CONTACT"

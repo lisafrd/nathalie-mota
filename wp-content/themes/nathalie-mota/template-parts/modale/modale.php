@@ -1,4 +1,4 @@
-<div class="module-container">
+<!-- <div class="module-container">
     <div id="modale-contact" class="modale">
         <div class="modale-content">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-header.png" alt="Contact Header" class="contact-header">
@@ -8,4 +8,5 @@
             <span class="close">&times;</span>
         </div>
     </div>
-</div>
+    <span class="black-background active"></span>
+</div> -->
